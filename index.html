@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cafeteria - los mejores Cafe times</title>
+  <!-- <style>
+    body {
+      background: lightblue;
+    }
+  </style> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- header -->
+  <!-- estilos en linea <header style="background: brown;"></header> -->
+
+
+  <section id="portada" class="portada">
+    <!-- portada -->
+    <header id="header" class="header contenedor">
+
+      <figure class="logotipo">
+        <!-- logotipo -->
+        <img src="img/logo.png" width="60" alt="logo cafe" />
+      </figure>
+
+      <nav class="menu">
+        <!-- menu -->
+        <!-- ul es una lista desordenada -->
+        <!-- ol es una lista ordenada -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#cafes">Cafes</a></li>
+          <li><a href="precios.html">Precios</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="contenedor">
+      <h1 class="titulo">CafeTime Saborint</h1>
+      <!--titulo-->
+      <h3 class="title-a">El mejor cafe intenso para momentos especiales</h3>
+      <!--Botón-->
+      <button>Conoce mas</button>
+    </div>
+
+  </section>
+
+  <section id="cafes" class="cafes contenedor">
+    <!-- cafes -->
+    <h2>Nuestros cafes</h2> <!-- titulo -->
+
+    <article class="cafe granoscafe">
+      <!-- cafe 1-->
+      <img class="right" src="img/cafetime.png" width="350" alt="cafe expresso" />
+
+      <div class="contenedor-cafe-a">
+        <h3 class="title-b">Expresso</h3>
+        <ol>
+          <li>Sabor intenso</li>
+          <li>Cafe puro</li>
+          <li>LLeno de energia</li>
+        </ol>
+      </div>
+
+    </article>
+
+    <article class="cafe granoscafe">
+      <!-- cafe 2-->
+      <img class="left" src="img/cafetimegranos.png" width="350" alt="granos de cafe" />
+
+      <div class="contenedor-cafe-b">
+        <h3 class="title-b">Granos finos</h3>
+        <ol>
+          <li>Primera selección</li>
+          <li>Frescos</li>
+          <li>Calidad inigualable</li>
+        </ol>
+      </div>
+
+    </article>
+
+  </section>
+
+  <footer class="footer" >
+    <div class="contenedor">
+      
+      <div class="contacto">
+        <img src="img/imagenfooter.png" alt="imagen footer" width="300" />
+  
+        <a href="tel:+569954587415"> <strong>Teléfono</strong> <span>9545874</span></a>
+  
+        <a href="mailto:contacto@cafetime.cl"> <strong>E-mail</strong> <span>contacto@cafetime.cl</span> </a>
+      </div>
+
+      <form class="formulario">
+
+        <div class="col1">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required name="nombre" />
+  
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required name="email" />
+  
+          <div class="generos">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
+            </label>
+  
+            <label for="hombre">
+              <input type="radio" id="hombre" name="genero" value="hombre" required> Hombre
+            </label>
+          </div>
+  
+          <div class="intereses">
+
+            <label for="cotizacion">
+              <input type="checkbox" id="cotizacion" name="intereses[]" value="cotizacion"> Cotización
+            </label>
+  
+            <label for="reclamos">
+              <input type="checkbox" id="reclamos" name="intereses[]" value="reclamos"> Reclamos
+            </label>
+  
+            <label for="observaciones">
+              <input type="checkbox" id="observaciones" name="intereses[]" value="observaciones"> Observaciones
+            </label>
+  
+            <label for="otros">
+              <input type="checkbox" id="otros" name="intereses[]" value="otros"> Otros
+            </label>
+          </div>
+        
+        </div>
+  
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="" id="comentarios" cols="30" rows="7"></textarea>
+          <input class="button" type="submit" value="Enviar">
+        </div>
+  
+      </form>
+  
+    </div>
+  
+  </footer>
+
+</body>
+
+</html>
